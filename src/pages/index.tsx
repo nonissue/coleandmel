@@ -1,5 +1,5 @@
 import { NextPage } from "next/types";
-import Link from "next/link";
+// import Link from "next/link";
 import { getLayout } from "@/layouts/Layout";
 
 const IndexPage: NextPage & {
