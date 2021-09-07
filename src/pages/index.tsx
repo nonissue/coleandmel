@@ -9,48 +9,15 @@ const IndexPage: NextPage & {
     <>
       <section className="prose prose-lg lg:prose-2xl dark:prose-dark ">
         <p>
-          Hi! I&apos;m Andy Williams. I am a Computer Science student{" @ "}
-          <Link href="https://macewan.ca">
-            <a>Macewan University</a>
-          </Link>
-          &nbsp;in Edmonton, Canada. I spend most of my free time tinkering with{" "}
-          <Link href="https://github.com/nonissue/andyws">
-            <a>web technologies</a>
-          </Link>
-          , attempting to understand my own overly-complicated,
-          rube-goldberesque{" "}
-          <Link href="https://github.com/nonissue/dotfiles">
-            <a>dotfiles</a>
-          </Link>
-          , or taking{" "}
-          <Link href="https://instagram.com/nonissue">
-            <a>photos</a>
-          </Link>
-          .
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
+          egestas pretium aenean pharetra. Orci eu lobortis elementum nibh
+          tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra
+          vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit
+          tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna
+          duis convallis convallis tellus. Urna molestie at elementum eu. Nunc
+          sed blandit libero volutpat.
         </p>
-        <h5>
-          You can learn more about some of{" "}
-          <Link href="/projects">
-            <a>my current projects</a>
-          </Link>
-          , view{" "}
-          <Link href="/log">
-            <a>links</a>
-          </Link>{" "}
-          I find interesting, peruse{" "}
-          <Link href="https://verbosed.vercel.app">
-            <a>words</a>
-          </Link>{" "}
-          that pique my interest, browse some of my favourite{" "}
-          <Link href="/photos">
-            <a>photos</a>
-          </Link>
-          , or find out different ways to{" "}
-          <Link href="/contact">
-            <a>contact me</a>
-          </Link>
-          .
-        </h5>
       </section>
     </>
   );

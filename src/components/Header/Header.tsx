@@ -40,17 +40,16 @@ const Header = () => {
                 <div className="flex-grow font-display uppercase text-xl text-almostblack dark:text-gray-50">
                   <Link href="/">
                     <a className="tracking-normal">
-                      <span className=" font-bold ">andy</span>
-                      <span className=" font-sans text-gray-600 ">.</span>
-                      <span className="text-opacity-50 text-gray-400 font-mono text-base ">
+                      <span className=" font-bold ">Cole</span>
+                      <span className=" font-sans text-gray-600 ">&</span>
+                      <span className=" font-bold ">Mel</span>
+                      {/* <span className="text-opacity-50 text-gray-400 font-mono text-base ">
                         ws
-                      </span>
+                      </span> */}
                     </a>
                   </Link>
                 </div>
-                <div className="font-display2 item-start flex-shrink font-medium tracking-wide uppercase  text-xs border border-dashed  border-gray-300 text-gray-600 dark:border-gray-600  py-0 px-1  mr-3 dark:text-gray-400 ">
-                  <Link href="/WIP">beta</Link>
-                </div>
+
                 <ThemeChanger />
                 <Popover.Button
                   ref={buttonRef}
