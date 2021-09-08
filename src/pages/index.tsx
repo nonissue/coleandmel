@@ -14,7 +14,7 @@ const IndexPage: NextPage & {
         </h2>
         <Image src="/okanagan-valley.jpg" width={800} height={534} />{" "}
         <p>
-          Join them in beautiful Pentickton, B.C. in 2021 to celebrate their
+          Join them in beautiful Penticton, B.C. in 2021 to celebrate their
           amazing day. Use the links below to find out more information about
           the happy couple and the event.
         </p>
