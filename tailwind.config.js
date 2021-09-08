@@ -25,6 +25,7 @@ module.exports = {
         bluegray: colors.blueGray,
         almostblack: "hsl(221, 30%, 7%)",
         red: colors.red,
+
         darkRadixRed: radixDark.red,
         lightRadixRed: radixLight.red,
         darkRadixTomato: radixDark.tomato,
@@ -113,7 +114,8 @@ module.exports = {
             },
             h1: { color: theme("colors.gray.800") },
             h2: {
-              color: theme("colors.gray.800"),
+              // color: theme("colors.gray.800"),
+              color: theme("colors.lightRadixTomato.tomato9"),
               fontFamily: `${theme("fontFamily.sans")}`,
               fontWeight: 900,
             },

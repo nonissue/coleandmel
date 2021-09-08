@@ -1,22 +1,10 @@
 {
   "nav": {
     "subMenuItems": [
-      {
-        "title": "Projects*",
-        "href": "/projects"
-      },
-      {
-        "title": "Log*",
-        "href": "/WIP"
-      },
-      {
-        "title": "Contact",
-        "href": "/contact"
-      },
-      {
-        "title": "Photos*",
-        "href": "/WIP"
-      }
+      { "title": "The Couple", "href": "/404" },
+      { "title": "Where to Stay", "href": "/accomodations" },
+      { "title": "Location", "href": "/location" },
+      { "title": "Things to Do", "href": "/activities" }
     ],
     "socialMediaItems": [
       {

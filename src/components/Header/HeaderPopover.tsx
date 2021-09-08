@@ -40,8 +40,9 @@ const HeaderPopover = ({ open, closePopover, data }: HeaderPopoverProps) => {
           className="absolute inset-0 flex border-b dark:border-opacity-90 dark:border-gray-900"
           aria-hidden="true"
         >
-          <div className="bg-white w-3/5 dark:bg-almostblack " />
-          <div className=" w-2/5 dark:bg-almostblack bg-white lg:bg-gray-50" />
+          <div className="bg-white dark:bg-almostblack dark:bg-opacity-10 w-full backdrop-filter backdrop-blur-md bg-opacity-20"></div>
+          {/* <div className="bg-white w-3/5 dark:bg-almostblack " /> */}
+          {/* <div className=" w-2/5 dark:bg-almostblack bg-white lg:bg-gray-50" /> */}
         </div>
         <div className="relative max-w-3xl mx-auto grid grid-cols-1 lg:grid-cols-1 pb-2 md:pb-0">
           <nav
@@ -52,7 +53,7 @@ const HeaderPopover = ({ open, closePopover, data }: HeaderPopoverProps) => {
               Site Navigation
             </h2>
             <div>
-              <h3 className="text-lg font-semibold">Site</h3>
+              {/* <h3 className="text-lg font-semibold">Navigation</h3> */}
               <ul className="mt-2 space-y-2 md:space-y-3">
                 {data.nav.subMenuItems.map((item) => (
                   <HeaderLink
@@ -64,7 +65,7 @@ const HeaderPopover = ({ open, closePopover, data }: HeaderPopoverProps) => {
                 ))}
               </ul>
             </div>
-            <div>
+            <div className="hidden">
               <h3 className="text-lg font-semibold">Connect</h3>
               <ul className="mt-2 space-y-2 md:space-y-3">
                 {data.nav.socialMediaItems.map((item) => (
