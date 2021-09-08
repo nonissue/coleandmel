@@ -8,7 +8,7 @@ export default class Document extends NextDocument {
         <Head>
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-          <meta name="Description" content="Andy.ws - Andy Williams " />
+          <meta name="Description" content="Cole & Mel are getting married" />
           <meta name="robots" content="index, follow" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta

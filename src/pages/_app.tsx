@@ -36,7 +36,7 @@ const MyApp: React.FunctionComponent<AppPropsWithLayout> = ({
       >
         <SiteContextProvider>
           <Head>
-            <title>andy.ws</title>
+            <title>Cole & Mel are getting married!</title>
           </Head>
 
           <Header />
