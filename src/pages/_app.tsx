@@ -12,25 +12,27 @@ import "@/styles/app.css";
 
 const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout || ((page) => page);
-
-  return (
-    <Inspect>
-      {/* <ThemeProvider
+  {
+    /* 
+      <Inspect><ThemeProvider
         forcedTheme={Component.theme || undefined}
         attribute="class"
         defaultTheme="system"
-      > */}
-      <SiteContextProvider>
-        <Head>
-          <title>Cole & Mel are getting married!</title>
-        </Head>
+      > */
+  }
+  {
+    /* </ThemeProvider></Inspect> */
+  }
+  return (
+    <SiteContextProvider>
+      <Head>
+        <title>Cole & Mel are getting married!</title>
+      </Head>
 
-        <Header />
-        {getLayout(<Component {...pageProps} />, pageProps)}
-        <Footer />
-      </SiteContextProvider>
-      {/* </ThemeProvider> */}
-    </Inspect>
+      <Header />
+      {getLayout(<Component {...pageProps} />, pageProps)}
+      <Footer />
+    </SiteContextProvider>
   );
 };
 
