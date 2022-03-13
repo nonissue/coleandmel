@@ -36,7 +36,7 @@ export const ThemeChanger: React.FunctionComponent = () => {
         }}
         aria-label="Theme Toggle"
       >
-        <div className="w-6 h-6 text-gray-400">
+        <div className="w-6 h-6 text-slate-400 dark:text-slate-400">
           {theme === "light" ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"

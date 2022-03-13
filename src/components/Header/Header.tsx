@@ -2,7 +2,7 @@ import { Fragment, useRef } from "react";
 import Link from "next/link";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
-import { HeaderPopover, ThemeChanger } from "@/components";
+import { HeaderPopover } from "@/components";
 import SiteConfig from "@/data/site.config.json";
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
   const buttonClick = () => buttonRef.current?.click();
 
   return (
-    <Popover as="header" className="z-10 relative shadow-sm">
+    <Popover as="header" className="z-10 mt-4 relative">
       {({ open }) => (
         <div className={`relative z-20`}>
           <Transition
@@ -37,14 +37,12 @@ const Header = () => {
               </div>
 
               <div className="relative flex items-center space-between w-full">
-                <div className="flex-grow font-display lowercase text-xl text-lightRadixRed-red10 dark:text-gray-50">
+                <div className="flex-grow font-display text-xl ">
                   <Link href="/">
                     <a className="tracking-normal">
-                      <span className=" font-bold ">Cole</span>
-                      <span className=" text-lightRadixRed-red8 font-display2 ">
-                        &
-                      </span>
-                      <span className=" font-bold ">Mel</span>
+                      <span className=" font-bold font-serif ">Cole</span>
+                      <span className="text-blue-600 font-display2 ">&</span>
+                      <span className="font-bold font-serif">Mel</span>
                       {/* <span className="text-opacity-50 text-gray-400 font-mono text-base ">
                         ws
                       </span> */}
@@ -52,18 +50,19 @@ const Header = () => {
                   </Link>
                 </div>
 
-                <ThemeChanger />
+                {/* <ThemeChanger /> */}
+
                 <Popover.Button
                   ref={buttonRef}
                   aria-label="Navigation Toggle"
-                  className="p-2 transition-all text-gray-400 duration-200 hover:text-lightRadixTomato-tomato11
-                      dark:hover:text-darkRadixTomato-tomato10"
+                  className="p-2 rounded-none transition-all bg-slate-200 dark:bg-gray-800 text-slate-600 dark:text-slate-300 duration-200 hover:text-red-300
+                      dark:hover:text-red-400"
                   id="toggle-popover"
                 >
                   {open ? (
-                    <XIcon className="block h-6 w-6 " aria-hidden="true" />
+                    <XIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <MenuIcon className=" block h-6 w-6 " aria-hidden="true" />
+                    <MenuIcon className=" block h-6 w-6" aria-hidden="true" />
                   )}
                 </Popover.Button>
               </div>
