@@ -3,7 +3,7 @@
 import type { NextComponentType, NextPageContext } from "next";
 import { AppProps } from "next/app";
 import Head from "next/head";
-import { ThemeProvider } from "next-themes";
+// import { ThemeProvider } from "next-themes";
 import Inspect from "inspx";
 import { SiteContextProvider } from "@/lib/context";
 import { Header, Footer } from "@/components";
@@ -29,21 +29,21 @@ const MyApp: React.FunctionComponent<AppPropsWithLayout> = ({
 
   return (
     <Inspect>
-      <ThemeProvider
+      {/* <ThemeProvider
         forcedTheme={Component.theme || undefined}
         attribute="class"
         defaultTheme="system"
-      >
-        <SiteContextProvider>
-          <Head>
-            <title>Cole & Mel are getting married!</title>
-          </Head>
+      > */}
+      <SiteContextProvider>
+        <Head>
+          <title>Cole & Mel are getting married!</title>
+        </Head>
 
-          <Header />
-          {getLayout(<Component {...pageProps} />, pageProps)}
-          <Footer />
-        </SiteContextProvider>
-      </ThemeProvider>
+        <Header />
+        {getLayout(<Component {...pageProps} />, pageProps)}
+        <Footer />
+      </SiteContextProvider>
+      {/* </ThemeProvider> */}
     </Inspect>
   );
 };
