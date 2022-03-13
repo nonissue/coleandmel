@@ -8,34 +8,36 @@ const IndexPage: NextPage & {
 } = () => {
   return (
     <>
-      <section className="prose prose-lg dark:prose-dark lg:prose-xl ">
-        <h2 className="font-serif text-blue-900 capitalize">
-          Cole & Mel are getting married!
-        </h2>
-        <Image
-          src="/okanagan-valley.jpg"
-          width={800}
-          height={400}
-          alt="Cole & Mel"
-        />{" "}
-        <p>
+      <section className="mt-0 pt-0 prose prose-lg dark:prose-dark lg:prose-xl ">
+        <div className="relative w-[100%] h-[190px] sm:h-[300px] rounded-xl shadow-xl">
+          <Image
+            src="/cole-and-mel.jpeg"
+            layout="fill"
+            alt="Cole & Mel"
+            width="240.2px"
+            height="189.6px"
+            objectFit="cover"
+            className="rounded-xl"
+            objectPosition={"top"}
+          />
+        </div>
+
+        {/* <h3 className="not-prose mt-4 font-serif text-sm font-bold text-blue-900 capitalize"> */}
+        <div className="not-prose">
+          <h3 className="mt-8 font-serif text-4xl font-bold text-center text-blue-900 capitalize">
+            Cole & Mel are getting married
+          </h3>
+        </div>
+        <p className="text-center">
           Join them in beautiful Penticton, B.C. in 2022 to celebrate their
           amazing day. Use the links below to find out more information about
           the happy couple and the event.
         </p>
-        <p className="hidden">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
-          egestas pretium aenean pharetra. Orci eu lobortis elementum nibh
-          tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra
-          vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit
-          tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna
-          duis convallis convallis tellus. Urna molestie at elementum eu. Nunc
-          sed blandit libero volutpat.
-        </p>
-        <button className="py-2 px-4 w-48 text-slate-900 bg-slate-300 rounded shadow-sm">
-          RSVP
-        </button>
+        <div className="my-12 text-center">
+          <button className="py-2 px-3 w-48 font-sans text-xl font-semibold tracking-wider text-rose-600  hover:text-sky-800 bg-sky-50/50 hover:bg-sky-100/50 rounded-md border-2 border-sky-300 hover:border-sky-600 shadow-md transition-all duration-300">
+            RSVP
+          </button>
+        </div>
       </section>
     </>
   );

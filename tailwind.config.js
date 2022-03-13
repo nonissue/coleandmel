@@ -84,7 +84,6 @@ module.exports = {
             },
             h3: {
               color: theme("colors.gray.600"),
-              fontWeight: 400,
             },
             h4: {
               color: theme("colors.gray.800"),
