@@ -9,12 +9,12 @@ const IndexPage: NextPage & {
   return (
     <>
       <section className="prose prose-lg lg:prose-xl dark:prose-dark ">
-        <h2 className="hidden text-lightRadixTomato-tomato10 capitalize">
+        <h2 className="text-blue-900 capitalize font-serif">
           Cole & Mel are getting married!
         </h2>
-        <Image src="/okanagan-valley.jpg" width={800} height={534} />{" "}
+        <Image src="/okanagan-valley.jpg" width={800} height={400} />{" "}
         <p>
-          Join them in beautiful Penticton, B.C. in 2021 to celebrate their
+          Join them in beautiful Penticton, B.C. in 2022 to celebrate their
           amazing day. Use the links below to find out more information about
           the happy couple and the event.
         </p>
@@ -28,6 +28,9 @@ const IndexPage: NextPage & {
           duis convallis convallis tellus. Urna molestie at elementum eu. Nunc
           sed blandit libero volutpat.
         </p>
+        <button className="py-2 px-4 rounded shadow-sm bg-slate-300 text-slate-900 w-48">
+          RSVP
+        </button>
       </section>
     </>
   );
