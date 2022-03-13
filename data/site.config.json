@@ -1,16 +1,13 @@
 {
   "nav": {
     "subMenuItems": [
-      { "title": "The Couple", "href": "/404" },
-      { "title": "Where to Stay", "href": "/accomodations" },
-      { "title": "Location", "href": "/location" },
-      { "title": "Things to Do", "href": "/activities" }
+      { "title": "The Couple", "href": "/thecouple" },
+      { "title": "The Special Day", "href": "/itinerary" },
+      { "title": "Contact", "href": "/contact" },
+      { "title": "Gifts", "href": "/gifts" },
+      { "title": "RSVP", "href": "/rsvp" }
     ],
     "socialMediaItems": [
-      {
-        "title": "Github",
-        "href": "https://www.github.com/nonissue"
-      },
       {
         "title": "Instagram",
         "href": "https://instagram.com/nonissue"
