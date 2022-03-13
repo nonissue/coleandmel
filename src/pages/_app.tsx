@@ -3,7 +3,7 @@
 
 import Head from "next/head";
 // import { ThemeProvider } from "next-themes";
-import Inspect from "inspx";
+
 import { AppPropsWithLayout } from "../types";
 import { SiteContextProvider } from "@/lib/context";
 import { Header, Footer } from "@/components";
