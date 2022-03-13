@@ -37,16 +37,16 @@ const HeaderPopover = ({ open, closePopover, data }: HeaderPopoverProps) => {
         className={`inset-x-0 transform absolute z-20 shadow-lg dark:shadow-2xl lg:dark:border-t-2 dark:border-opacity-60 dark:border-gray-900 `}
       >
         <div
-          className="absolute inset-0 flex border-b dark:border-opacity-90 dark:border-gray-900"
+          className="flex absolute inset-0 border-b dark:border-gray-900/90"
           aria-hidden="true"
         >
-          <div className="bg-white dark:bg-almostblack dark:bg-opacity-10 w-full backdrop-filter backdrop-blur-md bg-opacity-20"></div>
+          <div className="w-full bg-white/20 dark:bg-almostblack/10 backdrop-blur-md"></div>
           {/* <div className="bg-white w-3/5 dark:bg-almostblack " /> */}
           {/* <div className=" w-2/5 dark:bg-almostblack bg-white lg:bg-gray-50" /> */}
         </div>
-        <div className="relative max-w-3xl mx-auto grid grid-cols-1 lg:grid-cols-1 pb-2 md:pb-0">
+        <div className="grid relative grid-cols-1 pb-2 mx-auto max-w-3xl md:pb-0 lg:grid-cols-1">
           <nav
-            className="grid gap-y-6 md:gap-y-10 px-6 py-4 md:pt-8 sm:grid-cols-3 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12"
+            className="grid gap-y-6 py-4 px-6 sm:grid-cols-3 sm:gap-x-8 sm:py-12 sm:px-6 md:gap-y-10 md:pt-8 lg:px-8 xl:pr-12"
             aria-labelledby="site nav"
           >
             <h2 id="solutionsHeading" className="sr-only">
@@ -80,13 +80,13 @@ const HeaderPopover = ({ open, closePopover, data }: HeaderPopoverProps) => {
             </div>
           </nav>
           {false && (
-            <div className="block md:block px-6 py-4 sm:py-12 sm:px-6 lg:px-8 lg:pt-8 xl:pl-12 opacity-100">
+            <div className="block py-4 px-6 opacity-100 sm:py-12 sm:px-6 md:block lg:px-8 lg:pt-8 xl:pl-12">
               <h3 className="text-lg font-semibold">Recent Activity</h3>
               <HeaderTimeline />
               <div className="mt-10 text-sm font-medium text-right">
                 <a
                   href="#"
-                  className=" transition ease-in-out duration-150 dark:text-indigo-300"
+                  className=" dark:text-indigo-300 transition duration-150 ease-in-out"
                 >
                   View more activity <span aria-hidden="true">&rarr;</span>
                 </a>

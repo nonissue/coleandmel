@@ -14,7 +14,7 @@ const RSVPPage: NextPage & {
       </p>
       {/* https://docs.google.com/forms/d/e/1FAIpQLSdcnsp-SaZPPtPfvHZRtf9imzzwRsCkmNVFDESI4OWoqNwDLQ/viewform */}
       <div className="text-center">
-        <button className="text-2xl w-48 py-2 px-4 bg-gradient-to-tl from-pink-900/20 via-purple-800/20 to-pink-600/20 bg-slate-300 shadow rounded-lg my-2 font-bold">
+        <button className="py-2 px-4 my-2 w-48 text-2xl font-bold bg-slate-300 bg-gradient-to-tl from-pink-900/20 via-purple-800/20 to-pink-600/20 rounded-lg shadow">
           RSVP Here
         </button>
       </div>
