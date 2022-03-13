@@ -8,13 +8,10 @@ const RSVPPage: NextPage & {
 } = () => {
   return (
     <section className="space-y-10">
-      <h1 className="text-4xl font-bold">RSVP</h1>
-      <p className="">
-        Please follow the link below to RSVP using Google Forms.
-      </p>
       {/* https://docs.google.com/forms/d/e/1FAIpQLSdcnsp-SaZPPtPfvHZRtf9imzzwRsCkmNVFDESI4OWoqNwDLQ/viewform */}
       <div className="text-center">
-        <button className="py-2 px-4 my-2 w-48 text-2xl font-bold bg-slate-300 bg-gradient-to-tl from-pink-900/20 via-purple-800/20 to-pink-600/20 rounded-lg shadow">
+        {/* hover:bg-rose-900 bg-gradient-to-br hover:bg-gradient-to-br from-rose-900/100 hover:from-rose-600 via-pink-700/100 hover:via-rose-700 to-rose-900/70 hover:to-rose-600 */}
+        <button className="py-4 px-6 my-12 w-64 text-2xl font-bold  text-slate-100 bg-rose-800 hover:bg-sky-900 rounded-lg shadow-xl transition-all duration-500">
           RSVP Here
         </button>
       </div>

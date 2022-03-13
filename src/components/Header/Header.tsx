@@ -38,7 +38,7 @@ const Header = () => {
                   <Link href="/">
                     <a className="tracking-normal">
                       <span className=" font-serif font-bold ">Cole</span>
-                      <span className="font-display2 text-blue-600 ">&</span>
+                      <span className="font-display2 text-rose-700 ">&</span>
                       <span className="font-serif font-bold">Mel</span>
                     </a>
                   </Link>
