@@ -1,5 +1,5 @@
 body {
-  @apply text-gray-900;
+  @apply text-slate-700 dark:text-slate-100;
 }
 
 @layer components {
