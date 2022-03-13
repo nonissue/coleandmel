@@ -8,8 +8,8 @@ const IndexPage: NextPage & {
 } = () => {
   return (
     <>
-      <section className="mt-0 pt-0 prose prose-lg dark:prose-dark lg:prose-xl ">
-        <div className="relative w-[100%] h-[190px] sm:h-[300px] rounded-xl shadow-xl">
+      <section className="pt-0 mt-0 prose prose-lg dark:prose-dark lg:prose-xl ">
+        <div className="relative w-[100%] h-[190px] rounded-xl shadow-xl sm:h-[300px]">
           <Image
             src="/cole-and-mel.jpeg"
             layout="fill"
@@ -21,8 +21,8 @@ const IndexPage: NextPage & {
             objectPosition={"top"}
           />
         </div>
-
         {/* <h3 className="not-prose mt-4 font-serif text-sm font-bold text-blue-900 capitalize"> */}
+        {/* eslint-disable-next-line tailwindcss/no-custom-classname */}
         <div className="not-prose">
           <h3 className="mt-8 font-serif text-4xl font-bold text-center text-blue-900 capitalize">
             Cole & Mel are getting married
