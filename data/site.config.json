@@ -1,11 +1,11 @@
 {
   "nav": {
     "subMenuItems": [
-      { "title": "The Couple", "href": "/thecouple" },
+      { "title": "The Couple", "href": "/about" },
       { "title": "The Special Day", "href": "/itinerary" },
-      { "title": "Contact", "href": "/contact" },
       { "title": "Gifts", "href": "/gifts" },
-      { "title": "RSVP", "href": "/rsvp" }
+      { "title": "RSVP", "href": "/rsvp" },
+      { "title": "Contact", "href": "/contact" }
     ],
     "socialMediaItems": [
       {
