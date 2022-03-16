@@ -15,7 +15,7 @@ const HeroSection = () => {
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
-            className="object-cover w-full h-56 sm:h-96 md:h-96 lg:w-full lg:h-full"
+            className="object-cover w-full h-72 sm:h-96 md:h-96 lg:w-full lg:h-full"
             src="./cole-and-mel3.jpg"
             alt=""
           />
