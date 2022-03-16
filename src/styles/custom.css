@@ -1,5 +1,5 @@
 body {
-  @apply text-slate-700 dark:text-slate-100;
+  @apply text-slate-700 dark:text-slate-100 bg-red-400;
 }
 
 @layer components {

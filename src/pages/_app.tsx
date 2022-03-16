@@ -6,7 +6,7 @@ import Head from "next/head";
 
 import { AppPropsWithLayout } from "../types";
 import { SiteContextProvider } from "@/lib/context";
-import { Header } from "@/components";
+// import { Header } from "@/components";
 
 import "@/styles/app.css";
 
@@ -29,7 +29,7 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
         <title>Cole & Mel are getting married!</title>
       </Head>
 
-      <Header />
+      {/* <Header /> */}
       {getLayout(<Component {...pageProps} />, pageProps)}
       {/* <Footer /> */}
     </SiteContextProvider>
