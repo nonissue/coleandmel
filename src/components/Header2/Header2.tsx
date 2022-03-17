@@ -119,9 +119,10 @@ const Header2 = () => {
             </span>
           </h1>
           <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-            Join them in beautiful Penticton, B.C. on July 21st, 2022 at Origin
-            Wines to celebrate their amazing day. Use the links below to find
-            out more information about the happy couple and the event.
+            We are so excited for you to join us on July 21st 2022 at Origin
+            Wines in Penticton, British Columbia to celebrate our special day.
+            Please use the link below to RSVP at your earliest convenience.
+            Check back soon for more information about the {"day's"} events.
           </p>
           <div className="mt-5 sm:flex sm:justify-center sm:mt-8 lg:justify-start">
             <div className="rounded-md shadow">
