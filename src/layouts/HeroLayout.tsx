@@ -1,4 +1,6 @@
-import { Header2 } from "src/components";
+import Image from "next/image";
+
+import { Header } from "src/components";
 
 type Props = {
   children: React.ReactElement;
@@ -7,6 +9,19 @@ type Props = {
 function Layout({ children }: Props): React.ReactElement {
   return (
     <div className="overflow-hidden relative bg-white">
+      <Header />
+      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <div className="w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full">
+          <Image
+            objectFit="cover"
+            src="/cole-and-mel-hero.jpeg"
+            alt=""
+            width="2190"
+            height="1460"
+            layout="responsive"
+          />
+        </div>
+      </div>
       <div className="mx-auto max-w-7xl">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:pb-28 lg:w-full lg:max-w-2xl xl:pb-32">
           <svg
@@ -18,17 +33,8 @@ function Layout({ children }: Props): React.ReactElement {
           >
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg>
-
-          <Header2 />
           {children}
         </div>
-      </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
-          className="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
-          src="/cole-and-mel3.jpg"
-          alt=""
-        />
       </div>
     </div>
   );
