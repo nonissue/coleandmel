@@ -4,7 +4,7 @@ import { getLayout } from "@/layouts/HeroLayout";
 
 const IndexPage = () => {
   return (
-    <main className="px-4 mx-auto mt-0 pt-10 max-w-7xl sm:px-6 sm:pt-12 md:pt-16 lg:px-8 lg:pt-20 xl:pt-28">
+    <main className="px-4 pt-10 mx-auto mt-0 max-w-7xl sm:px-6 sm:pt-12 md:pt-16 lg:px-8 lg:pt-20 xl:pt-28">
       <div className="sm:text-center lg:text-left">
         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
           <span className="block xl:inline">Cole and Mel are</span>{" "}

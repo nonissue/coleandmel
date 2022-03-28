@@ -12,9 +12,9 @@ const navigation = [
 
 const Header = () => {
   return (
-    <div className="relative bg-white z-20 ">
+    <div className="relative z-20 bg-white ">
       <Popover>
-        <div className="relative px-4 pt-6 pb-6 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="relative py-6 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <nav
             className="flex relative justify-between items-center sm:h-10 lg:justify-start"
             aria-label="Global"
