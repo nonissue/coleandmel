@@ -1,6 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 // import Image from "next/image";
 
-import Link from "next/link";
+// import Link from "next/link";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
@@ -12,10 +13,6 @@ const navigation = [
   { name: "Marketplace", href: "#" },
   { name: "Company", href: "#" },
 ];
-
-type Props = {
-  children: React.ReactElement;
-};
 
 function Test() {
   return (
@@ -35,6 +32,7 @@ function Test() {
                       <img
                         className="relative inset-y-0 z-50 h-12 w-auto py-1  lg:h-10"
                         src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                        alt=""
                       />
                     </a>
                     <div className="-mr-0 flex items-center md:hidden">

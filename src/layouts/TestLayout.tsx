@@ -1,6 +1,5 @@
 // import Image from "next/image";
-
-import { Header } from "src/components";
+// import { Header } from "src/components";
 
 type Props = {
   children: React.ReactElement;
