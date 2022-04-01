@@ -7,13 +7,7 @@ type Props = {
 };
 
 function Layout({ children }: Props): React.ReactElement {
-  return (
-    <div className="overflow-hidden relative bg-white">
-      <Header />
-
-      {children}
-    </div>
-  );
+  return <div className="">{children}</div>;
 }
 
 export const getLayout = (page: React.ReactElement): React.ReactElement => (

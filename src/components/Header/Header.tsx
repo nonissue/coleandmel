@@ -8,11 +8,12 @@ import Link from "next/link";
 const navigation = [
   { name: "RSVP", href: "/rsvp" },
   { name: "Schedule", href: "/schedule" },
+  { name: "Location", href: "/location" },
 ];
 
 const Header = () => {
   return (
-    <div className="relative z-20 bg-white ">
+    <div className="relative z-20 ">
       <Popover>
         <div className="relative py-6 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <nav
