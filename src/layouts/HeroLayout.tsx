@@ -8,7 +8,7 @@ type Props = {
 
 function Layout({ children }: Props): React.ReactElement {
   return (
-    <div className="overflow-hidden relative bg-white">
+    <div className="relative mb-20 overflow-auto bg-white">
       <Header />
 
       {children}

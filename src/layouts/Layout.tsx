@@ -6,11 +6,11 @@ type Props = {
 
 function Layout({ children }: Props): React.ReactElement {
   return (
-    <div className="overflow-hidden relative bg-white">
+    <div className="relative overflow-hidden bg-white">
       <Header />
 
       <div className="mx-auto max-w-7xl">
-        <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:pb-28 lg:w-full xl:pb-32">
+        <div className="relative z-10 bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32">
           {/* <svg
             className="hidden absolute inset-y-0 right-0 w-48 h-full text-white  translate-x-1/2 lg:block"
             fill="currentColor"
