@@ -108,13 +108,9 @@ export default function Example() {
         We should be able to change / hide this based on route
         */}
         <div className="relative md:pb-12">
-          {/* <div className="absolute inset-0 flex flex-col" aria-hidden="true">
-            <div className="flex-1" />
-            <div className="w-full flex-1" />
-          </div> */}
-          <div className="mx-auto max-w-7xl px-0 sm:px-6">
+          <div className="mx-auto flex max-w-7xl justify-center px-0 sm:px-6">
             <img
-              className="relative pb-0 shadow-lg md:rounded-2xl md:shadow-lg md:shadow-gray-400/70"
+              className="relative shadow-lg md:rounded-none md:shadow-lg md:shadow-gray-400/70"
               src="/cole-and-mel-hero.jpeg"
               alt="The Happy Couple — Cole and Mel"
             />
@@ -133,7 +129,7 @@ export default function Example() {
         </p>
         <div className="mx-auto mt-8 flex max-w-md justify-center py-6 px-6 font-sans text-2xl text-gray-600 sm:px-6 sm:text-lg md:mt-8 md:max-w-3xl md:text-center md:text-3xl">
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdcnsp-SaZPPtPfvHZRtf9imzzwRsCkmNVFDESI4OWoqNwDLQ/viewform">
-            <a className="rounded-xl border-2 border-rose-300 bg-rose-200 py-2 px-10 font-sans font-bold text-rose-900 shadow-md shadow-rose-600/20 duration-200 hover:border-rose-200 hover:bg-rose-100 hover:text-rose-600 hover:shadow-rose-400/10 md:py-2 md:px-10 md:text-2xl">
+            <a className="rounded border-2 border-rose-200 bg-rose-200/0 py-2 px-10 font-sans font-bold text-rose-600 shadow-md shadow-rose-600/10 duration-200 hover:border-rose-200 hover:bg-rose-100 hover:text-rose-600 hover:shadow-rose-400/10 md:py-2 md:px-10 md:text-2xl">
               R.S.V.P.
             </a>
           </Link>
