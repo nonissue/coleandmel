@@ -6,7 +6,10 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 
 const navigation = [
-  { name: "RSVP", href: "/rsvp" },
+  {
+    name: "RSVP",
+    href: "https://docs.google.com/forms/d/e/1FAIpQLSdcnsp-SaZPPtPfvHZRtf9imzzwRsCkmNVFDESI4OWoqNwDLQ/viewform",
+  },
   // { name: "Schedule", href: "/schedule" },
   // { name: "Location", href: "/location" },
   { name: "The Special Day", href: "/thedayof" },
