@@ -1,83 +1,147 @@
-// import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
+/* This example requires Tailwind CSS v2.0+ */
+
 import Link from "next/link";
-import { getLayout } from "@/layouts/HeroLayout";
+import { NavMenu } from "src/components/Version2/Nav";
 
-type Props = {
-  children: React.ReactElement;
-};
-
-function HeroComponentLayout({
-  imageSrc,
-  children,
-}: { imageSrc: string } & Props) {
+const GridBg = () => {
   return (
-    <div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        {/*  eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          className="h-72 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-          // src="/cole-and-mel-hero.jpeg"
-          src={imageSrc}
-          alt=""
-        />
-      </div>
-      <div className="mx-auto max-w-7xl">
-        <div className="relative z-10 bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
-          <svg
-            className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2  text-white lg:block"
-            fill="currentColor"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-          >
-            <polygon points="50,0 100,0 50,100 0,100" />
-          </svg>
-          {children}
-        </div>
+    <div className="absolute inset-y-0 h-full w-full" aria-hidden="true">
+      <div className="relative h-full">
+        <svg
+          className="absolute right-full translate-y-1/3 translate-x-1/4 transform opacity-40 sm:translate-x-1/2 md:translate-y-1/2 lg:translate-x-full"
+          width={404}
+          height={784}
+          fill="none"
+          viewBox="0 0 404 784"
+        >
+          <defs>
+            <pattern
+              id="e229dbec-10e9-49ee-8ec3-0286ca089edf"
+              x={0}
+              y={0}
+              width={20}
+              height={20}
+              patternUnits="userSpaceOnUse"
+            >
+              <rect
+                x={0}
+                y={0}
+                width={4}
+                height={4}
+                className="text-gray-200"
+                fill="currentColor"
+              />
+            </pattern>
+          </defs>
+          <rect
+            width={404}
+            height={784}
+            fill="url(#e229dbec-10e9-49ee-8ec3-0286ca089edf)"
+          />
+        </svg>
+        <svg
+          className="absolute left-full -translate-y-3/4 -translate-x-1/4 transform opacity-50 sm:-translate-x-1/2 md:-translate-y-1/2 lg:-translate-x-3/4"
+          width={404}
+          height={784}
+          fill="none"
+          viewBox="0 0 404 784"
+        >
+          <defs>
+            <pattern
+              id="d2a68204-c383-44b1-b99f-42ccff4e5365"
+              x={0}
+              y={0}
+              width={20}
+              height={20}
+              patternUnits="userSpaceOnUse"
+            >
+              <rect
+                x={0}
+                y={0}
+                width={4}
+                height={4}
+                className="text-gray-200"
+                fill="currentColor"
+              />
+            </pattern>
+          </defs>
+          <rect
+            width={404}
+            height={784}
+            fill="url(#d2a68204-c383-44b1-b99f-42ccff4e5365)"
+          />
+        </svg>
       </div>
     </div>
   );
-}
+};
 
-const IndexPage = () => {
+export default function Example() {
   return (
-    <HeroComponentLayout imageSrc="/cole-and-mel-hero.jpeg">
-      <main className="mx-auto mt-0 max-w-7xl px-4 pt-10 sm:px-6 sm:pt-12 md:pt-16 lg:px-8 lg:pt-20 xl:pt-28">
-        <div className="sm:text-center lg:text-left">
-          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-            <span className="block xl:inline">Cole and Mel are</span>{" "}
-            <span className="block text-sky-700 xl:inline">
-              getting married.
-            </span>
-          </h1>
-          <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-            We are so excited for you to join us on July 21st 2022 at Origin
-            Wines in Penticton, British Columbia to celebrate our special day.
-            Please use the link below to RSVP at your earliest convenience.
-            Check back soon for more information about the {"day's"} events.
-          </p>
-          <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-            <div className="rounded-md shadow">
-              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdcnsp-SaZPPtPfvHZRtf9imzzwRsCkmNVFDESI4OWoqNwDLQ/viewform">
-                <a className="flex w-full items-center justify-center rounded-md border border-transparent bg-pink-500 py-3 px-8 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg">
-                  RSVP
-                </a>
-              </Link>
-            </div>
-            <div className="mt-3 sm:mt-0 sm:ml-3">
-              <Link href="mailto:cole_savage@hotmail.com">
-                <a className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 py-3 px-8 text-base font-medium text-indigo-700 hover:bg-indigo-200 md:py-4 md:px-10 md:text-lg">
-                  Contact
-                </a>
-              </Link>
+    // This div contains everything
+    <div className="bg-gray-50 pb-16">
+      {/* Hero */}
+      <div className="relative overflow-hidden">
+        <GridBg />
+        {/* Hero Nav */}
+        <NavMenu showLogo={false} />
+
+        {/* Hero Copy */}
+        <div className="relative pt-6 pb-16 sm:pb-12 md:mt-0">
+          <div className="mx-auto mt-6 max-w-7xl px-4 sm:px-6 md:mt-0">
+            <div className="text-center">
+              <h1 className="space-y-0 text-4xl tracking-normal text-gray-800 sm:text-5xl md:mb-12 md:text-6xl md:leading-normal">
+                <span className="block font-ebgaramond text-4xl font-[400] leading-loose text-gray-900 md:text-6xl md:leading-tight">
+                  Cole and Mel are
+                </span>
+                <span className="block font-fraunces text-7xl font-[900] italic tracking-tight text-rose-800 md:text-8xl">
+                  getting married.
+                </span>
+              </h1>
             </div>
           </div>
         </div>
-      </main>
-    </HeroComponentLayout>
+
+        {/* 
+        Hero Image 
+        We should be able to change / hide this based on route
+        */}
+        <div className="relative md:pb-12">
+          <div className="mx-auto flex max-w-7xl justify-center px-0 sm:px-6">
+            <img
+              className="relative shadow-lg md:rounded-none md:shadow-lg md:shadow-gray-400/70"
+              src="/cole-and-mel-hero.jpeg"
+              alt="The Happy Couple — Cole and Mel"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* 
+      Page Body Copy
+       */}
+      <div className="relative">
+        <p className="mx-auto mt-8 max-w-md px-6 font-ebgaramond text-2xl leading-snug text-gray-600 sm:px-6 sm:text-lg md:mt-8 md:max-w-3xl md:text-center md:text-3xl md:leading-relaxed">
+          We are so excited for you to join us on July 21st 2022 at Origin Wines
+          in Penticton, British Columbia to celebrate our special day. Please
+          use the link below to RSVP at your earliest convenience.
+        </p>
+        <div className="mx-auto mt-8 flex max-w-md justify-center py-6 px-6 font-sans text-2xl text-gray-600 sm:px-6 sm:text-lg md:mt-8 md:max-w-3xl md:text-center md:text-3xl">
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdcnsp-SaZPPtPfvHZRtf9imzzwRsCkmNVFDESI4OWoqNwDLQ/viewform">
+            <a className="rounded border-2 border-rose-200 bg-rose-200/0 py-2 px-10 font-sans font-bold text-rose-600 shadow-md shadow-rose-600/10 duration-200 hover:border-rose-200 hover:bg-rose-100 hover:text-rose-600 hover:shadow-rose-400/10 md:py-2 md:px-10 md:text-2xl">
+              R.S.V.P.
+            </a>
+          </Link>
+        </div>
+      </div>
+      {/* <div className="bg-gray-50/0">
+        <div className="mx-auto max-w-7xl py-16 px-8 sm:py-24 sm:px-6 lg:px-8">
+          <h2 className=" text-sm font-semibold uppercase tracking-wide text-gray-400">
+            Details
+          </h2>
+        </div>
+      </div> */}
+    </div>
   );
-};
-
-IndexPage.getLayout = getLayout;
-
-export default IndexPage;
+}
