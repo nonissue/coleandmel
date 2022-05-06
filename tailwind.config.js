@@ -31,6 +31,13 @@ module.exports = {
           "Arial",
           ...defaultTheme.fontFamily.serif,
         ],
+        serif: [
+          "EB Garamond",
+          // "Fraunces script=latin rev=1",
+          "sans-serif",
+          "Arial",
+          ...defaultTheme.fontFamily.serif,
+        ],
         // frauncestest: [
         //   "Fraunces script=latin rev=1",
         //   "sans-serif",
@@ -59,6 +66,10 @@ module.exports = {
         DEFAULT: {
           css: {
             // color: theme("colors.slate.400"),
+
+            p: {
+              fontFamily: `${theme("font-serif")}`,
+            },
             a: {
               transition: "all 0.15s ease-in",
 
@@ -72,7 +83,10 @@ module.exports = {
               fontWeight: "false",
               display: "inline-block",
             },
-            h1: { color: theme("colors.slate.300") },
+            h1: {
+              fontFamily: `${theme("font-serif")}`,
+              color: `${theme("color.gray.900")}`,
+            },
             h2: {
               // color: theme("colors.gray.800"),
               fontFamily: `${theme("fontFamily.sans")}`,
@@ -86,9 +100,7 @@ module.exports = {
             },
             h5: {
               color: theme("colors.gray.500"),
-
               fontSize: "0.9em",
-
               lineHeight: `1.8em`,
               "& a": {
                 display: "inline",
@@ -106,49 +118,6 @@ module.exports = {
             },
             p: {
               color: theme("colors.gray.800"),
-            },
-          },
-        },
-        dark: {
-          css: {
-            // color: theme("colors.gray.900"),
-            a: {
-              "text-decoration": "none",
-              "&:hover, &.active": {},
-            },
-            h1: {
-              color: theme("colors.white"),
-            },
-            h2: {
-              color: theme("colors.blue.100"),
-            },
-            h3: {
-              color: theme("colors.gray.200"),
-              fontWeight: 400,
-            },
-            h4: {
-              color: theme("colors.gray.50"),
-            },
-            h5: {
-              color: theme("colors.gray.400"),
-
-              "& a": {
-                // lineHeight: `calc(0.9em * 1.7)`,
-                // display: "inline-block",
-                background: `${theme("colors.transparent")} !important`,
-
-                "&:hover, &.active": {},
-              },
-            },
-            code: {
-              color: theme("colors.gray.800"),
-              "background-color": theme("colors.gray.50"),
-              "&:before, &:after": {
-                display: "none",
-              },
-            },
-            p: {
-              color: theme("colors.gray.50"),
             },
           },
         },

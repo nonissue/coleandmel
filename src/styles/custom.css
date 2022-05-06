@@ -1,21 +1,34 @@
 body {
-  @apply text-slate-700 dark:text-slate-100 bg-red-400;
+  @apply bg-red-400 text-slate-700 dark:text-slate-100;
 }
 
 @layer components {
   .padded-container {
-    @apply px-6 py-8 pt-8 sm:py-12 sm:pt-12 sm:px-6 lg:px-8 max-w-3xl mx-auto bg-white bg-opacity-10 dark:bg-almostblack;
+    @apply mx-auto max-w-3xl bg-white bg-opacity-10 px-6 py-8 pt-8 dark:bg-almostblack sm:py-12 sm:px-6 sm:pt-12 lg:px-8;
+  }
+
+  .list-dash-type {
+    list-style-type: none;
+  }
+  .list-dash-type li {
+    margin-left: 4px;
+  }
+  .list-dash-type li:before {
+    content: "—";
+    position: absolute;
+    margin-left: -28px;
+    /* padding-right: 8px; */
   }
 
   /* initial implementation of custom utility to transition gradient to transparent on hover */
   /* this functionality is not provided by tailwind OOB */
 
   .container-padding {
-    @apply px-6 py-8 pt-2 sm:py-12 sm:pt-12 sm:px-6 lg:px-8;
+    @apply px-6 py-8 pt-2 sm:py-12 sm:px-6 sm:pt-12 lg:px-8;
   }
 
   .custom-container {
-    @apply container max-w-4xl mx-auto;
+    @apply container mx-auto max-w-4xl;
   }
 
   .wavy-lines-bg {
