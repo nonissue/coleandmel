@@ -95,7 +95,7 @@ export default function Example() {
                 <span className="block font-ebgaramond text-4xl font-[400] leading-loose text-gray-900 md:text-6xl md:leading-tight">
                   Cole and Mel are
                 </span>
-                <span className="block font-fraunces text-7xl font-[900] italic tracking-tight text-rose-800 md:text-8xl">
+                <span className="block font-fraunces text-7xl font-[900] italic tracking-tight text-indigo-800 md:text-8xl">
                   getting married.
                 </span>
               </h1>
@@ -129,7 +129,7 @@ export default function Example() {
         </p>
         <div className="mx-auto mt-8 flex max-w-md justify-center py-6 px-6 font-sans text-2xl text-gray-600 sm:px-6 sm:text-lg md:mt-8 md:max-w-3xl md:text-center md:text-3xl">
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdcnsp-SaZPPtPfvHZRtf9imzzwRsCkmNVFDESI4OWoqNwDLQ/viewform">
-            <a className="rounded border-2 border-rose-200 bg-rose-200/0 py-2 px-10 font-sans font-bold text-rose-600 shadow-md shadow-rose-600/10 duration-200 hover:border-rose-200 hover:bg-rose-100 hover:text-rose-600 hover:shadow-rose-400/10 md:py-2 md:px-10 md:text-2xl">
+            <a className="border-b-4 border-b-indigo-700/50 bg-transparent py-2 font-playfair text-2xl font-bold tracking-wider text-indigo-700 duration-300  hover:border-b-indigo-200 hover:text-indigo-400 md:py-2 md:px-0 md:text-5xl">
               R.S.V.P.
             </a>
           </Link>
