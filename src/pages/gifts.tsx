@@ -100,7 +100,7 @@ export default function Example() {
               Gifts
             </h2>
 
-            <span className="prose mx-auto mb-10 block max-w-2xl text-center text-2xl italic leading-relaxed prose-p:font-serif md:mb-16 md:text-3xl md:leading-relaxed">
+            <span className="prose mx-auto mb-10 block max-w-2xl text-center text-3xl italic leading-relaxed prose-p:font-serif md:mb-16 md:text-3xl md:leading-relaxed">
               <p>
                 Since we’re moving away, and packing’s such a chore, We don’t
                 have a registry; for us, less is more.
