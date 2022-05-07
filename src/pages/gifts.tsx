@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import { NavMenu } from "src/components/Version2/Nav";
+import { GiftIllustrationSVG } from "src/components/Version2/GiftIllustrationSVG";
 
 const GridBg = () => {
   return (
@@ -89,10 +90,16 @@ export default function Example() {
 
         {/* Hero Copy */}
         <div className="mx-auto max-w-4xl px-4">
-          <article className="prose relative mx-auto max-w-5xl px-4 pt-6 pb-16 prose-p:font-serif prose-ul:font-fraunces sm:pb-12 md:mt-0">
-            <h1 className="text-center font-serif font-semibold md:mt-10">
+          <article className="prose relative mx-auto max-w-5xl px-4 pt-0 pb-16 prose-p:font-serif prose-ul:font-fraunces sm:pb-12 md:mt-0">
+            <div className="not-prose relative">
+              <div className="mx-auto flex justify-center  py-12 px-0 sm:px-6">
+                <GiftIllustrationSVG scale={0.5} />
+              </div>
+            </div>
+            <h2 className="mt-0 pt-0 text-center font-ebgaramond text-3xl md:text-5xl">
               Gifts
-            </h1>
+            </h2>
+
             <span className="prose mx-auto mb-20 block max-w-xl text-center text-2xl italic prose-p:font-playfair md:text-3xl">
               <p>
                 Since we’re moving away, and packing’s such a chore, We don’t
@@ -107,81 +114,68 @@ export default function Example() {
                 toward our honeymoon, we’d sure appreciate!
               </p>
             </span>
-            {/* </div> */}
-            <p className="text-xl">
-              We would appreciate any gifts you are wanting to give in CAD or
-              AED. Below are a list of some adventures we would put the gifts
+
+            <p className="mx-auto mt-0 max-w-xl pt-0 text-center text-2xl leading-relaxed md:text-2xl md:leading-relaxed">
+              We would appreciate any gifts you want to give to be in the form
+              of cash (
+              <span className="font-serif text-xl font-semibold">CAD</span>{" "}
+              or&nbsp;
+              <span className="font-serif text-xl font-semibold">AED</span>).
+              Below are a list of some adventures we would put the gifts
               towards! Think of it as an adventure registry.
             </p>
-            <ul className="list-dash-type not-prose my-4 text-lg">
+            <ul className="not-prose unstyled-list my-4 pl-0 text-center text-2xl leading-relaxed">
               <li>
                 <Link href="https://www.louvreabudhabi.ae/">
-                  <a className="text-rose-700 underline">
+                  <a className="text-indigo-900 underline">
                     The Louvre in Abu Dhabi
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="https://www.atlasobscura.com/places/ferrari-world">
-                  <a className="text-rose-700 underline">Ferrari world</a>
+                  <a className="text-indigo-900 underline">Ferrari world</a>
                 </Link>
               </li>
               <li>
                 <Link href="https://visitabudhabi.ae/en/things-to-do/desert-and-outdoor-activities/sandboarding">
-                  <a className="text-rose-700 underline">
-                    Sandboarding and Off-roading
+                  <a className="text-indigo-900 underline">
+                    Sand-boarding + Off-roading
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="https://www.platinum-heritage.com/bedouin-culture-safari">
-                  <a className="text-rose-700 underline">
+                  <a className="text-indigo-900 underline">
                     Desert Safari and perhaps learn to use falcons
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="https://www.dubaiopera.com/">
-                  <a className="text-rose-700 underline">
+                  <a className="text-indigo-900 underline">
                     Help Cole get some classes at the Dubai Opera
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="http://www.atmosphereburjkhalifa.com/">
-                  <a className="text-rose-700 underline">
+                  <a className="text-indigo-900 underline">
                     A dining experience in the worlds tallest restaurant!
                   </a>
                 </Link>
               </li>
             </ul>
-            <p className="text-xl">
-              Or if you find anything
+            <p className="mx-auto max-w-2xl text-center text-2xl">
+              Or if you find anything else, please
               <Link href="mailto:cole_savage@hotmail.com">
-                <a className="text-rose-700 underline"> let us know!</a>
+                <a className="text-indigo-800 underline"> let us know!</a>
               </Link>
               We are hoping there are many adventures to be had on our UAE honey
               moon.
             </p>
           </article>
-
-          {/* 
-        Hero Image 
-        We should be able to change / hide this based on route
-        */}
         </div>
-
-        {/* 
-      Page Body Copy
-       */}
-
-        {/* <div className="bg-gray-50/0">
-        <div className="mx-auto max-w-7xl py-16 px-8 sm:py-24 sm:px-6 lg:px-8">
-          <h2 className=" text-sm font-semibold uppercase tracking-wide text-gray-400">
-            Details
-          </h2>
-        </div>
-      </div> */}
       </div>
     </div>
   );
