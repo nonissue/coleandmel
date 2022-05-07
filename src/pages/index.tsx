@@ -110,7 +110,7 @@ export default function Example() {
         <div className="relative md:pb-12">
           <div className="mx-auto flex max-w-7xl justify-center px-0 sm:px-6">
             <img
-              className="relative shadow-lg md:rounded-none md:shadow-lg md:shadow-gray-400/70"
+              className="relative rounded-none shadow-lg md:rounded-xl md:shadow-lg md:shadow-gray-400/70"
               src="/cole-and-mel-hero.jpeg"
               alt="The Happy Couple — Cole and Mel"
             />
@@ -129,7 +129,7 @@ export default function Example() {
         </p>
         <div className="mx-auto mt-8 flex max-w-md justify-center py-6 px-6 font-sans text-2xl text-gray-600 sm:px-6 sm:text-lg md:mt-8 md:max-w-3xl md:text-center md:text-3xl">
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdcnsp-SaZPPtPfvHZRtf9imzzwRsCkmNVFDESI4OWoqNwDLQ/viewform">
-            <a className="border-b-4 border-b-indigo-700/50 bg-transparent py-2 font-playfair text-2xl font-bold tracking-wider text-indigo-700 duration-300  hover:border-b-indigo-200 hover:text-indigo-400 md:py-2 md:px-0 md:text-5xl">
+            <a className="border-b-2 border-b-indigo-700/50 bg-transparent py-2 font-playfair text-2xl font-bold tracking-wider text-indigo-700 duration-300 hover:border-b-indigo-200  hover:text-indigo-400 md:border-b-4 md:py-2 md:px-0 md:text-5xl">
               R.S.V.P.
             </a>
           </Link>

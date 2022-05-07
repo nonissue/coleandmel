@@ -9,16 +9,19 @@ body {
 
   .unstyled-list {
     
-    @apply max-w-xl mx-auto font-fraunces text-transparent divide-y divide-dotted divide-slate-400/60;
+    @apply max-w-xl mx-auto font-sans text-transparent  divide-slate-400/60;
   }
   .unstyled-list li {
     @apply font-fraunces py-4 md:py-4 px-1;
   }
 
   .unstyled-list a:hover {
-    @apply text-rose-600 duration-300;
+    @apply text-rose-700 duration-300;
   }
 
+  .unstyled-list a {
+    @apply border-b-2 border-rose-200;
+  }
 
   /* initial implementation of custom utility to transition gradient to transparent on hover */
   /* this functionality is not provided by tailwind OOB */

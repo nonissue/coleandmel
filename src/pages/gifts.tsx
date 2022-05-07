@@ -96,11 +96,11 @@ export default function Example() {
                 <GiftIllustrationSVG scale={0.5} />
               </div>
             </div>
-            <h2 className="mt-0 pt-0 text-center font-ebgaramond text-3xl md:text-5xl">
+            <h2 className="mt-0 pt-0 text-center font-fraunces text-3xl md:text-4xl">
               Gifts
             </h2>
 
-            <span className="prose mx-auto mb-20 block max-w-xl text-center text-2xl italic prose-p:font-playfair md:text-3xl">
+            <span className="prose mx-auto mb-10 block max-w-2xl text-center text-2xl italic leading-relaxed prose-p:font-serif md:mb-16 md:text-3xl md:leading-relaxed">
               <p>
                 Since we’re moving away, and packing’s such a chore, We don’t
                 have a registry; for us, less is more.
@@ -115,61 +115,61 @@ export default function Example() {
               </p>
             </span>
 
-            <p className="mx-auto mt-0 max-w-xl pt-0 text-center text-2xl leading-relaxed md:text-2xl md:leading-relaxed">
+            <p className="not-prose mx-auto mt-0 pt-0 text-2xl leading-relaxed md:text-center md:text-2xl md:leading-relaxed">
               We would appreciate any gifts you want to give to be in the form
               of cash (
               <span className="font-serif text-xl font-semibold">CAD</span>{" "}
               or&nbsp;
               <span className="font-serif text-xl font-semibold">AED</span>).
               Below are a list of some adventures we would put the gifts
-              towards! Think of it as an adventure registry.
+              towards! <br />
+              <br />
+              Think of it as an adventure registry!
             </p>
-            <ul className="not-prose unstyled-list my-4 pl-0 text-center text-2xl leading-relaxed">
+            <ul className="not-prose unstyled-list tracking-loose my-4 max-w-xl pl-0 text-xl font-semibold leading-relaxed md:text-center md:text-2xl md:leading-relaxed">
               <li>
                 <Link href="https://www.louvreabudhabi.ae/">
-                  <a className="text-indigo-900 underline">
-                    The Louvre in Abu Dhabi
-                  </a>
+                  <a className="text-indigo-900 ">The Louvre in Abu Dhabi</a>
                 </Link>
               </li>
               <li>
                 <Link href="https://www.atlasobscura.com/places/ferrari-world">
-                  <a className="text-indigo-900 underline">Ferrari world</a>
+                  <a className="text-indigo-900 ">Ferrari world</a>
                 </Link>
               </li>
               <li>
                 <Link href="https://visitabudhabi.ae/en/things-to-do/desert-and-outdoor-activities/sandboarding">
-                  <a className="text-indigo-900 underline">
+                  <a className="text-indigo-900 ">
                     Sand-boarding + Off-roading
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="https://www.platinum-heritage.com/bedouin-culture-safari">
-                  <a className="text-indigo-900 underline">
+                  <a className="text-indigo-900 ">
                     Desert Safari and perhaps learn to use falcons
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="https://www.dubaiopera.com/">
-                  <a className="text-indigo-900 underline">
+                  <a className="text-indigo-900 ">
                     Help Cole get some classes at the Dubai Opera
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="http://www.atmosphereburjkhalifa.com/">
-                  <a className="text-indigo-900 underline">
+                  <a className="text-indigo-900 ">
                     A dining experience in the worlds tallest restaurant!
                   </a>
                 </Link>
               </li>
             </ul>
-            <p className="mx-auto max-w-2xl text-center text-2xl">
-              Or if you find anything else, please
+            <p className="mx-auto max-w-2xl text-lg md:text-center">
+              If you find anything else, please
               <Link href="mailto:cole_savage@hotmail.com">
-                <a className="text-indigo-800 underline"> let us know!</a>
+                <a className="text-slate-500 "> let us know!</a>
               </Link>
               We are hoping there are many adventures to be had on our UAE honey
               moon.
