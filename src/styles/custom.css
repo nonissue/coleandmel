@@ -7,18 +7,18 @@ body {
     @apply mx-auto max-w-3xl bg-white bg-opacity-10 px-6 py-8 pt-8 dark:bg-almostblack sm:py-12 sm:px-6 sm:pt-12 lg:px-8;
   }
 
-  .list-dash-type {
-    list-style-type: none;
+  .unstyled-list {
+    
+    @apply max-w-xl mx-auto font-fraunces text-transparent divide-y divide-dotted divide-slate-400/60;
   }
-  .list-dash-type li {
-    margin-left: 4px;
+  .unstyled-list li {
+    @apply font-fraunces py-4 md:py-4 px-1;
   }
-  .list-dash-type li:before {
-    content: "—";
-    position: absolute;
-    margin-left: -28px;
-    /* padding-right: 8px; */
+
+  .unstyled-list a:hover {
+    @apply text-rose-600 duration-300;
   }
+
 
   /* initial implementation of custom utility to transition gradient to transparent on hover */
   /* this functionality is not provided by tailwind OOB */
