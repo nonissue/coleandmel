@@ -94,24 +94,7 @@ export default function Example() {
             </h1>
           </div>
         </div>
-
-        {/* 
-        Hero Image 
-        We should be able to change / hide this based on route
-        */}
       </div>
-
-      {/* 
-      Page Body Copy
-       */}
-
-      {/* <div className="bg-gray-50/0">
-        <div className="mx-auto max-w-7xl py-16 px-8 sm:py-24 sm:px-6 lg:px-8">
-          <h2 className=" text-sm font-semibold uppercase tracking-wide text-gray-400">
-            Details
-          </h2>
-        </div>
-      </div> */}
     </div>
   );
 }
