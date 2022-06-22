@@ -85,20 +85,21 @@ export default function Example() {
       <div className="relative overflow-hidden">
         <GridBg />
         {/* Hero Nav */}
-        <NavMenu showLogo={false} />
+
+        <NavMenu showLogo={true} />
 
         {/* Hero Copy */}
-        <div className="relative pt-4 pb-12 sm:pb-8 md:mt-0">
+        <div className="relative pt-4 pb-12 sm:pb-8 md:mt-8">
           <div className="mx-auto mt-6 max-w-7xl px-4 sm:px-6 md:mt-0">
             <div className="text-center">
-              <h1 className="space-y-0 text-4xl tracking-normal text-gray-800 sm:text-5xl md:mb-12 md:text-6xl md:leading-normal">
-                <span className="block font-ebgaramond text-4xl font-[300] italic leading-normal text-gray-900 md:text-6xl md:leading-tight">
-                  Join us @
+              <h1 className="space-y-0 text-4xl tracking-normal text-gray-800 sm:text-5xl md:mb-12 md:pt-8 md:text-6xl md:leading-tight">
+                <span className="block pb-2 font-ebgaramond text-4xl font-[400] uppercase  tracking-widest text-gray-700 md:text-3xl">
+                  Join us at
                 </span>
-                <span className="block font-fraunces text-7xl font-[900] tracking-tight text-indigo-800 md:text-8xl">
+                <span className="block font-fraunces text-7xl font-[900] tracking-tight text-blue-800 md:text-8xl">
                   Origin Wines
                 </span>
-                <span className="block pt-2 font-ebgaramond text-xl font-[300] text-slate-700 md:pt-6 md:text-2xl md:leading-tight">
+                <span className="block pt-2 font-ebgaramond text-xl font-[400] text-slate-700 md:pt-6 md:text-2xl md:font-[400] md:leading-tight">
                   On July 21st, 2022.
                 </span>
               </h1>
@@ -111,9 +112,9 @@ export default function Example() {
         We should be able to change / hide this based on route
         */}
         <div className="relative hidden md:block md:pb-12">
-          <div className="mx-auto flex max-w-5xl justify-center px-0 sm:px-6">
+          <div className="mx-auto flex max-w-5xl justify-center rounded-2xl border-2 border-blue-800 px-0 shadow-xl sm:px-0">
             <img
-              className="relative rounded-none opacity-75 shadow-lg brightness-125 contrast-100 saturate-0 md:rounded-xl md:shadow-lg md:shadow-gray-400/70"
+              className="relative rounded-none border-2 border-white opacity-100 brightness-[120%] contrast-[100%] saturate-[125%] md:rounded-2xl md:shadow-gray-400/70"
               src="/origin-wines-location-styled-2.png"
               alt="The Happy Couple — Cole and Mel"
             />
@@ -155,7 +156,7 @@ export default function Example() {
             </p>
           </div>
 
-          <div className="md:w-3/3 flex flex-col justify-around space-y-1 border-dotted border-slate-300 px-4  md:space-y-2 md:border-l md:py-10">
+          <div className="md:w-3/3 flex flex-col justify-around space-y-1 border-dotted border-slate-300 px-4  md:space-y-2 md:py-10">
             <p className="pb-4">
               <span className="text-md border-b border-dotted border-b-slate-300 font-serif uppercase tracking-wide md:text-lg ">
                 View On:
@@ -176,22 +177,26 @@ export default function Example() {
               </Link>
             </p>
           </div>
-          <div className="mx-auto mt-8 flex hidden max-w-md justify-center py-6 px-6 font-sans text-2xl text-gray-600 sm:px-6 sm:text-lg md:mt-8 md:max-w-3xl md:text-center md:text-3xl">
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdcnsp-SaZPPtPfvHZRtf9imzzwRsCkmNVFDESI4OWoqNwDLQ/viewform">
-              <a className="border-b-2 border-b-indigo-700/50 bg-transparent py-2 font-playfair text-2xl font-bold tracking-wider text-indigo-700 duration-300 hover:border-b-indigo-200  hover:text-indigo-400 md:border-b-4 md:py-2 md:px-0 md:text-5xl">
-                R.S.V.P.
-              </a>
-            </Link>
+          <div className="mx-auto max-w-md justify-center py-6 px-6 font-ebgaramond text-2xl italic text-gray-600 sm:px-6 sm:text-lg md:mt-8 md:max-w-3xl md:text-center md:text-2xl">
+            <div className="mx-auto mt-12 border-2 border-slate-400 bg-gradient-to-tr from-blue-900/0 via-slate-100/0 to-slate-200/0 px-4 py-4 text-left leading-relaxed shadow-md md:border-[2px] md:px-6 md:py-6">
+              <span className="md:text-md block pb-3 font-fraunces text-2xl font-[800] not-italic">
+                Reminder
+              </span>
+              Please
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdcnsp-SaZPPtPfvHZRtf9imzzwRsCkmNVFDESI4OWoqNwDLQ/viewform">
+                <a
+                  className="mx-1 border-b border-indigo-300 font-playfair font-[400] tracking-wide text-sky-800 duration-300 hover:border-rose-300/70 
+                  hover:text-pink-700  md:border-b
+                  md:px-0.5 md:leading-loose"
+                >
+                  R.S.V.P.
+                </a>
+              </Link>{" "}
+              as soon as possible if you haven{"'"}t already done so.
+            </div>
           </div>
         </article>
       </div>
-      {/* <div className="bg-gray-50/0">
-        <div className="mx-auto max-w-7xl py-16 px-8 sm:py-24 sm:px-6 lg:px-8">
-          <h2 className=" text-sm font-semibold uppercase tracking-wide text-gray-400">
-            Details
-          </h2>
-        </div>
-      </div> */}
     </div>
   );
 }
