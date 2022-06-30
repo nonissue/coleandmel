@@ -8,7 +8,7 @@ const navigation = [
     name: "RSVP",
     href: "https://docs.google.com/forms/d/e/1FAIpQLSdcnsp-SaZPPtPfvHZRtf9imzzwRsCkmNVFDESI4OWoqNwDLQ/viewform",
   },
-  { name: "The Special Day", href: "/thedayof" },
+  { name: "The Special Day", href: "/thespecialday" },
   { name: "Location", href: "/location" },
   { name: "Gifts", href: "/gifts" },
 ];
