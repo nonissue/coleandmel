@@ -2,7 +2,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 
 import Link from "next/link";
-import { NavMenu } from "src/components/Version2/Nav";
+import { Nav } from "src/components/Nav";
 import { GridBg } from "src/components";
 
 export default function Index() {
@@ -12,7 +12,7 @@ export default function Index() {
       <div className="relative overflow-hidden">
         <GridBg />
         {/* Hero Nav */}
-        <NavMenu showLogo={false} />
+        <Nav showLogo={false} />
 
         {/* Hero Copy */}
         <div className="relative pt-6 pb-16 sm:pb-12 md:mt-0">

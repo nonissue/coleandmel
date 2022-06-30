@@ -2,7 +2,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 
 import Link from "next/link";
-import { NavMenu } from "src/components/Version2/Nav";
+import { Nav } from "src/components/Nav";
 import { RSVPReminder } from "@/components";
 
 const GridBg = () => {
@@ -87,7 +87,7 @@ export default function Example() {
         <GridBg />
         {/* Hero Nav */}
 
-        <NavMenu showLogo={true} />
+        <Nav showLogo={true} />
 
         {/* Hero Copy */}
         <div className="relative pt-4 pb-12 sm:pb-8 md:mt-8">
@@ -97,7 +97,7 @@ export default function Example() {
                 <span className="block pb-2 font-ebgaramond text-4xl font-[400] uppercase  tracking-widest text-gray-700 md:text-3xl">
                   Join us at
                 </span>
-                <span className="block font-fraunces text-7xl font-[900] tracking-tight text-blue-800 md:text-8xl">
+                <span className="block font-fraunces text-7xl font-[900] tracking-tight text-sky-900 md:text-8xl">
                   Origin Wines
                 </span>
                 <span className="block pt-2 font-ebgaramond text-xl font-[400] text-slate-700 md:pt-6 md:text-2xl md:font-[400] md:leading-tight">

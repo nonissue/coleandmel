@@ -2,8 +2,8 @@
 /* This example requires Tailwind CSS v2.0+ */
 
 import Link from "next/link";
-import { NavMenu } from "src/components/Version2/Nav";
-import { GiftIllustrationSVG } from "src/components/Version2/GiftIllustrationSVG";
+import { Nav } from "src/components/Nav";
+import { GiftIllustrationSVG } from "src/components/GiftIllustrationSVG";
 import { RSVPReminder } from "@/components";
 
 const GridBg = () => {
@@ -87,7 +87,7 @@ export default function Example() {
       <div className="relative overflow-hidden">
         <GridBg />
         {/* Hero Nav */}
-        <NavMenu showLogo={true} />
+        <Nav showLogo={true} />
 
         {/* Hero Copy */}
         <div className="mx-auto max-w-4xl px-4">
