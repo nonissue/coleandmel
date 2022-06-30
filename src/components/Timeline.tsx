@@ -42,19 +42,19 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Timeline() {
+export function Timeline() {
   return (
-    <div className="flow-root">
+    <div className="">
       <ul role="list" className="py-2 md:py-4">
         {timelineData.map((event) => (
           <li key={event.id}>
-            <div className="relative mx-auto max-w-lg pb-2 md:scale-110 md:pb-10">
-              <div className="relative mb-8 flex flex-col items-center justify-center md:flex-col md:items-center md:justify-center">
+            <div className=" mx-auto max-w-lg pb-2 md:scale-110 md:pb-10">
+              <div className=" mb-8 flex flex-col items-center justify-center md:flex-col md:items-center md:justify-center">
                 <div className="mb-4">
                   <span
                     className={classNames(
                       "bg-sky-900",
-                      "flex h-12 w-12 items-center justify-center rounded-full p-2 shadow-md ring-1 ring-slate-200 md:h-12 md:w-12 md:p-3"
+                      "flex h-12 w-12 items-center justify-center rounded-full p-2 shadow-md md:h-12 md:w-12 md:p-3"
                     )}
                   >
                     <event.icon
