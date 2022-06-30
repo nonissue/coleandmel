@@ -44,7 +44,7 @@ export default function TheSpecialDay() {
               Considerations
             </h2>
             <ul className="list-disc pl-4 font-ebgaramond text-slate-500">
-              <li>Our Ceremony and reception will be held outdoors.</li>
+              <li>Our ceremony and reception will be held outdoors.</li>
               <li>
                 We love your children, but due to space and venue restrictions
                 we cannot accommodate guests under age 18 on our wedding day or
@@ -60,6 +60,18 @@ export default function TheSpecialDay() {
               <li>
                 Wine will be served during the meal and additional drinks can be
                 purchased at the bar until 10 PM for $2 + tip.
+              </li>
+              <li>
+                If you need assistance with transportation to your accommodation
+                after the reception, please contact{" "}
+                <a
+                  href="mailto:cole_savage@hotmail"
+                  className="mx-0.5 border-b border-indigo-300 font-[500] not-italic tracking-wide text-sky-800  duration-300
+          hover:border-rose-300/70 hover:text-pink-700  
+          md:border-b md:px-0.5 md:leading-loose"
+                >
+                  Cole or Mel
+                </a>
               </li>
               <li>
                 Please
