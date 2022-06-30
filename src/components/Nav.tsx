@@ -71,12 +71,12 @@ export const Nav = ({ showLogo }: NavMenuProps) => {
                 </div>
               )}
             </div>
-            <div className="hidden font-playfair text-xl md:flex md:space-x-10 md:pt-4">
+            <div className="hidden font-ebgaramond text-xl md:flex md:space-x-10 md:pt-4">
               {navigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="font-medium text-gray-500 hover:text-gray-900"
+                  className="font-normal text-slate-500 hover:text-gray-900"
                 >
                   {item.name}
                 </a>
