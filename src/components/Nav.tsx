@@ -29,7 +29,7 @@ type NavMenuProps = {
   showLogo: boolean;
 };
 
-export const NavMenu = ({ showLogo }: NavMenuProps) => {
+export const Nav = ({ showLogo }: NavMenuProps) => {
   return (
     <div className="py-2">
       <Popover>
@@ -97,7 +97,7 @@ export const NavMenu = ({ showLogo }: NavMenuProps) => {
         >
           <Popover.Panel
             focus
-            className="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden"
+            className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition md:hidden"
           >
             <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
               <div className="flex items-center justify-between px-5 pt-4">
