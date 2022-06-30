@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import { NavMenu } from "src/components/Version2/Nav";
+import { RSVPReminder } from "@/components";
 
 const GridBg = () => {
   return (
@@ -114,8 +115,9 @@ export default function Example() {
         <div className="relative hidden md:block md:pb-12">
           <div className="mx-auto flex max-w-5xl justify-center rounded-2xl border-2 border-blue-800 px-0 shadow-xl sm:px-0">
             <img
-              className="relative rounded-none border-2 border-white opacity-100 brightness-[120%] contrast-[100%] saturate-[125%] md:rounded-2xl md:shadow-gray-400/70"
-              src="/origin-wines-location-styled-2.png"
+              className="relative rounded-none border-2 border-white brightness-125 hue-rotate-[-25deg] saturate-100 md:rounded-2xl md:shadow-gray-400/70"
+              // src="/origin-wines-location-styled-2.png"
+              src="/origin-wines-location-styled.png"
               alt="The Happy Couple — Cole and Mel"
             />
           </div>
@@ -125,7 +127,7 @@ export default function Example() {
       <div className="relative block p-0 md:hidden md:pb-12">
         <div className="mx-auto flex max-w-xl justify-center p-0 px-0 sm:px-6">
           <img
-            className="relative rounded-none opacity-70 shadow-lg brightness-125 contrast-100 saturate-0 md:rounded-xl md:shadow-lg md:shadow-gray-400/70"
+            className="relative rounded-none opacity-90 shadow-lg brightness-125 hue-rotate-[-25deg] saturate-100 md:rounded-xl md:shadow-lg md:shadow-gray-400/70"
             src="/origin-wines-styled-mobile.png"
             alt="The Happy Couple — Cole and Mel"
           />
@@ -164,37 +166,20 @@ export default function Example() {
             </p>
             <p className="text-base leading-snug tracking-tight md:text-2xl md:leading-relaxed">
               <Link href="https://goo.gl/maps/TaGZJkaEBTBfEyJ5A">
-                <a className="border-b-0 border-dotted border-b-indigo-300/50 font-serif font-[600] text-indigo-900">
+                <a className="border-b-0 border-b-indigo-300/50 font-serif font-[600] text-indigo-900 hover:text-rose-700 hover:underline">
                   Google Maps
                 </a>
               </Link>
             </p>
             <p className="text-base leading-snug tracking-tight md:text-2xl md:leading-relaxed">
-              <Link href="  https://maps.apple.com/?address=1278%20Riddle%20Rd,%20Penticton%20BC%20V2A%208X2,%20Canada&auid=14293514979113012970&ll=49.538518,-119.561540&lsp=9902&q=Origin%20Wines&_ext=CjIKBAgEEGIKBAgFEAMKBQgGEIABCgQIChAACgQIUhABCgQIVRAPCgQIWRACCgUIpAEQARImKQN9fflaxEhAMSdZF6xh5F3AOYFSo1WBxUhAQYNZ2N5+413AUAM%3D">
-                <a className="border-b-0 border-dotted border-b-indigo-300/50 font-serif font-[600] text-indigo-900">
+              <Link href="https://maps.apple.com/?address=1278%20Riddle%20Rd,%20Penticton%20BC%20V2A%208X2,%20Canada&auid=14293514979113012970&ll=49.538518,-119.561540&lsp=9902&q=Origin%20Wines&_ext=CjIKBAgEEGIKBAgFEAMKBQgGEIABCgQIChAACgQIUhABCgQIVRAPCgQIWRACCgUIpAEQARImKQN9fflaxEhAMSdZF6xh5F3AOYFSo1WBxUhAQYNZ2N5+413AUAM%3D">
+                <a className="border-b-0 border-b-indigo-300/50 font-serif font-[600] text-indigo-900 hover:text-rose-700 hover:underline">
                   Apple Maps
                 </a>
               </Link>
             </p>
           </div>
-          <div className="mx-auto max-w-md justify-center py-6 px-6 font-ebgaramond text-2xl italic text-gray-600 sm:px-6 sm:text-lg md:mt-8 md:max-w-3xl md:text-center md:text-2xl">
-            <div className="mx-auto mt-12 border-2 border-slate-400 bg-gradient-to-tr from-blue-900/0 via-slate-100/0 to-slate-200/0 px-4 py-4 text-left leading-relaxed shadow-md md:border-[2px] md:px-6 md:py-6">
-              <span className="md:text-md block pb-3 font-fraunces text-2xl font-[800] not-italic">
-                Reminder
-              </span>
-              Please
-              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdcnsp-SaZPPtPfvHZRtf9imzzwRsCkmNVFDESI4OWoqNwDLQ/viewform">
-                <a
-                  className="mx-1 border-b border-indigo-300 font-playfair font-[400] tracking-wide text-sky-800 duration-300 hover:border-rose-300/70 
-                  hover:text-pink-700  md:border-b
-                  md:px-0.5 md:leading-loose"
-                >
-                  R.S.V.P.
-                </a>
-              </Link>{" "}
-              as soon as possible if you haven{"'"}t already done so.
-            </div>
-          </div>
+          <RSVPReminder />
         </article>
       </div>
     </div>

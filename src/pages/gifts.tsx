@@ -4,6 +4,7 @@
 import Link from "next/link";
 import { NavMenu } from "src/components/Version2/Nav";
 import { GiftIllustrationSVG } from "src/components/Version2/GiftIllustrationSVG";
+import { RSVPReminder } from "@/components";
 
 const GridBg = () => {
   return (
@@ -176,6 +177,7 @@ export default function Example() {
             </p>
           </article>
         </div>
+        <RSVPReminder />
       </div>
     </div>
   );
