@@ -38,12 +38,6 @@ module.exports = {
           "Arial",
           ...defaultTheme.fontFamily.serif,
         ],
-        // frauncestest: [
-        //   "Fraunces script=latin rev=1",
-        //   "sans-serif",
-        //   "Arial",
-        //   ...defaultTheme.fontFamily.serif,
-        // ],
 
         playfair: ["Playfair Display", ...defaultTheme.fontFamily.serif],
 
