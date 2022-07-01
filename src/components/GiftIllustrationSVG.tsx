@@ -7,8 +7,6 @@ export const GiftIllustrationSVG = ({ scale }: { scale?: number }) => {
       fillRule="evenodd"
       strokeLinejoin="round"
       width={574 * (scale ?? 1)}
-      //   width="574"
-      //   height="533"
       height={533 * (scale ?? 1)}
       strokeMiterlimit="2"
       clipRule="evenodd"
