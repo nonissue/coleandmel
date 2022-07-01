@@ -1,87 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-/* This example requires Tailwind CSS v2.0+ */
 
 import Link from "next/link";
-import { Nav } from "src/components/Nav";
-import { GiftIllustrationSVG } from "src/components/GiftIllustrationSVG";
-import { RSVPReminder } from "@/components";
-
-const GridBg = () => {
-  return (
-    <div className="absolute inset-y-0 h-full w-full" aria-hidden="true">
-      <div className="relative h-full">
-        <svg
-          className="absolute right-full translate-y-1/3 translate-x-1/4 transform opacity-40 sm:translate-x-1/2 md:translate-y-1/2 lg:translate-x-full"
-          width={404}
-          height={784}
-          fill="none"
-          viewBox="0 0 404 784"
-        >
-          <defs>
-            <pattern
-              id="e229dbec-10e9-49ee-8ec3-0286ca089edf"
-              x={0}
-              y={0}
-              width={20}
-              height={20}
-              patternUnits="userSpaceOnUse"
-            >
-              <rect
-                x={0}
-                y={0}
-                width={4}
-                height={4}
-                className="text-gray-200"
-                fill="currentColor"
-              />
-            </pattern>
-          </defs>
-          <rect
-            width={404}
-            height={784}
-            fill="url(#e229dbec-10e9-49ee-8ec3-0286ca089edf)"
-          />
-        </svg>
-        <svg
-          className="absolute left-full -translate-y-3/4 -translate-x-1/4 transform opacity-50 sm:-translate-x-1/2 md:-translate-y-1/2 lg:-translate-x-3/4"
-          width={404}
-          height={784}
-          fill="none"
-          viewBox="0 0 404 784"
-        >
-          <defs>
-            <pattern
-              id="d2a68204-c383-44b1-b99f-42ccff4e5365"
-              x={0}
-              y={0}
-              width={20}
-              height={20}
-              patternUnits="userSpaceOnUse"
-            >
-              <rect
-                x={0}
-                y={0}
-                width={4}
-                height={4}
-                className="text-gray-200"
-                fill="currentColor"
-              />
-            </pattern>
-          </defs>
-          <rect
-            width={404}
-            height={784}
-            fill="url(#d2a68204-c383-44b1-b99f-42ccff4e5365)"
-          />
-        </svg>
-      </div>
-    </div>
-  );
-};
+import { GiftIllustrationSVG, GridBg, Nav, RSVPReminder } from "@/components";
 
 export default function Example() {
   return (
-    // This div contains everything
     <div className="bg-gray-50 pb-16">
       {/* Hero */}
       <div className="relative overflow-hidden">
@@ -127,41 +50,39 @@ export default function Example() {
               <br />
               Think of it as an adventure registry!
             </p>
-            <ul className="not-prose unstyled-list tracking-loose my-4 max-w-xl pl-0 text-xl font-semibold leading-relaxed md:text-center md:text-2xl md:leading-relaxed">
+            <ul className="not-prose unstyled-list tracking-loose my-4 max-w-xl pl-0 text-xl font-semibold leading-normal md:text-center md:text-2xl md:leading-normal">
               <li>
                 <Link href="https://www.louvreabudhabi.ae/">
-                  <a className="text-indigo-900 ">The Louvre in Abu Dhabi</a>
+                  <a className="text-blue-900 ">The Louvre in Abu Dhabi</a>
                 </Link>
               </li>
               <li>
                 <Link href="https://www.atlasobscura.com/places/ferrari-world">
-                  <a className="text-indigo-900 ">Ferrari world</a>
+                  <a className="text-blue-900 ">Ferrari world</a>
                 </Link>
               </li>
               <li>
                 <Link href="https://visitabudhabi.ae/en/things-to-do/desert-and-outdoor-activities/sandboarding">
-                  <a className="text-indigo-900 ">
-                    Sand-boarding + Off-roading
-                  </a>
+                  <a className="text-blue-900 ">Sand-boarding + Off-roading</a>
                 </Link>
               </li>
               <li>
                 <Link href="https://www.platinum-heritage.com/bedouin-culture-safari">
-                  <a className="text-indigo-900 ">
+                  <a className="text-blue-900 ">
                     Desert Safari and perhaps learn to use falcons
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="https://www.dubaiopera.com/">
-                  <a className="text-indigo-900 ">
+                  <a className="text-blue-900 ">
                     Help Cole get some classes at the Dubai Opera
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="http://www.atmosphereburjkhalifa.com/">
-                  <a className="text-indigo-900 ">
+                  <a className="text-blue-900 ">
                     A dining experience in the worlds tallest restaurant!
                   </a>
                 </Link>
@@ -170,8 +91,9 @@ export default function Example() {
             <p className="mx-auto max-w-2xl text-lg md:text-center">
               If you find anything else, please
               <Link href="mailto:cole_savage@hotmail.com">
-                <a className="text-slate-500 "> let us know!</a>
+                <a className="text-blue-900 underline"> let us know!</a>
               </Link>
+              <br />
               We are hoping there are many adventures to be had on our UAE honey
               moon.
             </p>

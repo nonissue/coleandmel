@@ -1,14 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-/* This example requires Tailwind CSS v2.0+ */
-
-import { Nav } from "src/components/Nav";
 
 import Link from "next/link";
-import { GridBg, Timeline } from "@/components";
+import { GridBg, Nav, Timeline } from "@/components";
 
 export default function TheSpecialDay() {
   return (
-    // This div contains everything
     <div className="bg-gray-50 pb-16">
       {/* Hero */}
       <div className="relative overflow-hidden">
@@ -21,13 +17,13 @@ export default function TheSpecialDay() {
         <div className="pt-4 pb-6 md:mt-0 md:pb-0">
           <div className="mx-auto mt-6 max-w-7xl px-4 md:mt-0 md:px-6">
             <div className="text-center">
-              <h1 className="mx-auto mt-4 mb-8 max-w-sm py-4 text-4xl tracking-normal text-gray-800 md:py-4 md:text-6xl md:leading-tight">
-                <span className="block pb-1 font-ebgaramond text-base font-[400] uppercase  tracking-widest text-gray-700 md:text-xs">
+              <h1 className="mt-0s mx-auto mb-8 max-w-xl py-4 text-4xl tracking-normal text-gray-800 md:py-4 md:text-4xl md:leading-tight">
+                <span className="border-b-0 border-dotted border-b-slate-400 px-3 py-1 font-serif text-xl font-[300] uppercase tracking-widest text-slate-800  md:text-lg">
                   July 21st, 2022
                 </span>
-                <span className="block  font-ebgaramond text-3xl font-[500] tracking-tight text-slate-700 md:text-2xl">
+                {/* <span className="block  font-ebgaramond text-3xl font-[500] tracking-tight text-slate-700 md:text-2xl">
                   The Special Day
-                </span>
+                </span> */}
               </h1>
             </div>
           </div>
@@ -88,7 +84,6 @@ export default function TheSpecialDay() {
               </li>
             </ul>
           </div>
-          {/* <RSVPReminder /> */}
         </article>
       </div>
     </div>

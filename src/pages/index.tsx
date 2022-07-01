@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-/* This example requires Tailwind CSS v2.0+ */
 
 import Link from "next/link";
-import { Nav } from "src/components/Nav";
-import { GridBg } from "src/components";
+import { GridBg, Nav } from "src/components";
 
 export default function Index() {
   return (
@@ -22,7 +20,7 @@ export default function Index() {
                 <span className="block font-ebgaramond text-4xl font-[400] leading-loose text-gray-900 md:text-6xl md:leading-tight">
                   Cole and Mel are
                 </span>
-                <span className="block font-fraunces text-7xl font-[900] italic tracking-tight text-sky-800 md:text-8xl">
+                <span className="block font-fraunces text-7xl font-[900] italic tracking-tight text-blue-900 md:text-8xl">
                   getting married.
                 </span>
               </h1>
@@ -32,7 +30,6 @@ export default function Index() {
 
         {/* 
         Hero Image 
-        We should be able to change / hide this based on route
         */}
         <div className="relative md:pb-12">
           <div className="mx-auto flex max-w-7xl justify-center px-0 sm:px-6">
@@ -56,7 +53,7 @@ export default function Index() {
         </p>
         <div className="mx-auto mt-8 flex max-w-md justify-center py-6 px-6 font-sans text-2xl text-gray-600 sm:px-6 sm:text-lg md:mt-8 md:max-w-3xl md:text-center md:text-3xl">
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdcnsp-SaZPPtPfvHZRtf9imzzwRsCkmNVFDESI4OWoqNwDLQ/viewform">
-            <a className="border-b-2 border-b-sky-200/50 bg-transparent py-2 font-playfair text-2xl font-bold tracking-wider text-sky-600 duration-300 hover:border-b-indigo-200  hover:text-indigo-400 md:border-b-4 md:py-2 md:px-0 md:text-5xl">
+            <a className="border-b-2 border-b-indigo-700/20 bg-transparent py-2 font-playfair text-2xl font-bold tracking-wider text-indigo-800 duration-300 hover:border-b-indigo-200  hover:text-indigo-400 md:border-b-4 md:py-2 md:px-0 md:text-5xl">
               R.S.V.P.
             </a>
           </Link>

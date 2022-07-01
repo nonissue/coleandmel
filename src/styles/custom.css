@@ -12,7 +12,7 @@ body {
     @apply max-w-xl mx-auto font-sans text-transparent  divide-slate-400/60;
   }
   .unstyled-list li {
-    @apply font-fraunces py-4 md:py-4 px-1;
+    @apply font-fraunces py-2 md:py-2 px-1;
   }
 
   .unstyled-list a:hover {

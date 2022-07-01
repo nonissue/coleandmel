@@ -53,7 +53,7 @@ export function Timeline() {
                 <div className="mb-4">
                   <span
                     className={classNames(
-                      "bg-sky-900",
+                      "bg-blue-900",
                       "flex h-12 w-12 items-center justify-center rounded-full p-2 shadow-md md:h-12 md:w-12 md:p-3"
                     )}
                   >
