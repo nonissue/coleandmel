@@ -35,7 +35,7 @@ export default function Index() {
         <div className="relative md:pb-12">
           <div className="mx-auto flex min-w-full max-w-5xl justify-center px-0 sm:px-6">
             <Image
-              src="/cole-and-mel-hero.jpeg"
+              src="/cole-and-mel-hero-min.jpeg"
               alt="The Happy Couple — Cole and Mel"
               height={1460}
               width={2190}
