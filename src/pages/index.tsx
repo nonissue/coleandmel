@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Image from "next/future/image";
+// import heromin from "../../public/images/heromin.jpg";
 import { GridBg, Nav, RSVPReminder } from "src/components";
 
 export default function Index() {
@@ -34,11 +35,14 @@ export default function Index() {
         <div className="relative md:pb-12">
           <div className="mx-auto  flex min-w-full max-w-5xl justify-center px-0 sm:px-6">
             <Image
-              src="/cole-and-mel-hero-min.jpeg"
+              src="/images/cole-and-mel-hero-min.webp"
+              priority
+              // src={heromin}
               alt="The Happy Couple — Cole and Mel"
-              sizes="64rem"
-              height={1460}
-              width={2190}
+              // sizes="(max-width: 600px) 600px, 1152px"
+              height={768}
+              width={1152}
+              // placeholder="blur"
               className="relative max-w-lg rounded-none shadow-lg md:max-w-6xl md:rounded-xl md:shadow-lg md:shadow-gray-400/70"
             />
           </div>
