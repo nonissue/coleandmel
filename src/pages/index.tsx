@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Link from "next/link";
+import Image from "next/future/image";
 import { GridBg, Nav } from "src/components";
 
 export default function Index() {
@@ -32,11 +33,13 @@ export default function Index() {
         Hero Image 
         */}
         <div className="relative md:pb-12">
-          <div className="mx-auto flex max-w-7xl justify-center px-0 sm:px-6">
-            <img
-              className="relative rounded-none shadow-lg md:rounded-xl md:shadow-lg md:shadow-gray-400/70"
+          <div className="mx-auto flex min-w-full max-w-5xl justify-center px-0 sm:px-6">
+            <Image
               src="/cole-and-mel-hero.jpeg"
               alt="The Happy Couple — Cole and Mel"
+              height={1460}
+              width={2190}
+              className="relative max-w-lg rounded-none shadow-lg md:max-w-6xl md:rounded-xl md:shadow-lg md:shadow-gray-400/70"
             />
           </div>
         </div>
