@@ -18,7 +18,9 @@ const LogoText = () => {
     <Link href="/">
       <a className="font-ebgaramond text-2xl text-gray-900">
         <span className=" font-[400] text-almostblack">Cole</span>
-        <span className="font-fraunces font-light text-gray-600">{"&"}</span>
+        <span className="font-fraunces_alt font-light text-gray-600">
+          {"&"}
+        </span>
         <span className="font-[400] text-almostblack">Mel</span>
       </a>
     </Link>

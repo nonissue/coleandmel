@@ -25,8 +25,13 @@ module.exports = {
         display: ["Space Grotesk", ...defaultTheme.fontFamily.sans],
         display2: ["Space Mono", ...defaultTheme.fontFamily.sans],
         fraunces: [
+          "'Fraunces'",
+          "Arial",
+          "serif",
+          ...defaultTheme.fontFamily.serif,
+        ],
+        fraunces_alt: [
           "'Fraunces script=latin rev=1'",
-          // "Fraunces script=latin rev=1",
           "sans-serif",
           "Arial",
           ...defaultTheme.fontFamily.serif,

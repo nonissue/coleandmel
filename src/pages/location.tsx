@@ -74,7 +74,7 @@ export default function Example() {
                 Address
               </span>
             </p>
-            <p className="mx-auto mt-4 max-w-md py-2 font-ebgaramond text-5xl font-[400] italic leading-snug text-gray-600 sm:px-6 sm:text-lg md:mt-2 md:max-w-3xl md:text-center md:text-5xl md:leading-tight">
+            <p className="mx-auto mt-4 max-w-md py-2 font-ebgaramond text-4xl font-[400] italic leading-snug text-gray-600 sm:px-6 sm:text-lg md:mt-2 md:max-w-3xl md:text-center md:text-5xl md:leading-tight">
               1268 Riddle Rd
               <br />
               Penticton, BC
