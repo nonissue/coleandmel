@@ -11,7 +11,7 @@ const timelineData = [
     content: "The Ceremony",
     target: "",
     href: "#",
-    date: "4:00 PM – 4:30 PM",
+    date: "4:00 PM – 5:00 PM",
     datetime: "2022-07-21",
     icon: HeartIcon,
     iconBackground: "bg-slate-400",
